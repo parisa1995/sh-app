@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
+"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header class="bg-blue-500 flex justify-between p-4 text-white">
+        
+        <div class="text-xl font-bold"> <a href="/"> Shopping App</a></div>
+        <div>
+          <ul class="flex flex-row gap-3 ">
+            <li><a href="/">Home</a></li>
+            <li><a href="/pages/products/products.html">Product</a></li>
+            <li><a class="bg-stone-100 text-black px-4 py-2 rounded" href="/pages/products/add_products.html">Add New Products</a></li>
+            <li><a href="/pages/about.html">about</a></li>
+          </ul>
+        </div>
+        
+      </header>
+      <main>
+       
+
+        <!-- <table class="table-auto border-2  border-gray-500 w-full">
+          <thead>
+            <tr class="table-auto border-2  border-gray-500">
+              <th class="table-auto border-2  border-gray-500">Song</th>
+              <th class="table-auto border-2  border-gray-500">Artist</th>
+              <th class="table-auto border-2  border-gray-500">Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-auto border-2  border-gray-500" >
+              <td class="table-auto border-2  border-gray-500">The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+              <td class="table-auto border-2  border-gray-500">Malcolm Lockyer</td>
+              <td class="table-auto border-2  border-gray-500">1961</td>
+            </tr>
+            <tr class="table-auto border-2  border-gray-500">
+              <td class="table-auto border-2  border-gray-500">Witchy Woman</td>
+              <td class="table-auto border-2  border-gray-500">The Eagles</td>
+              <td class="table-auto border-2  border-gray-500">1972</td>
+            </tr>
+            <tr class="table-auto border-2  border-gray-500">
+              <td class="table-auto border-2  border-gray-500">Shining Star</td>
+              <td class="table-auto border-2  border-gray-500">Earth, Wind, and Fire</td>
+              <td class="table-auto border-2  border-gray-500">1975</td>
+            </tr>
+          </tbody>
+        </table> -->
+        <div id="error" class="bg-red-500 py-3 px-3 text-white" style="display: none;">
+          An <strong>Error</strong> happende when fetching data from the
+           <strong>Server</strong>. &nbsp;
+           Please try again.
+      </div>
+
+      <table  class="table-auto border-2 border-collapse  border-gray-500 w-full">
+
+        <colgroup>
+          <col span="1" style="width: 40%"/>
+          <col span="1" style="width: 20%"/>
+          <col span="1" style="width: 40%"/>
+        </colgroup>
+
+        <thead>
+          <tr class="border-2 border-dashed border-collapse border-gray-500 ">
+            <th class="border-2 border-dashed border-collapse border-gray-500 py-4">Products: </th>
+            <th class="border-2 border-dashed border-collapse border-gray-500">Price: </th>
+            <th class="border-2 border-dashed border-collapse border-gray-500 ">Actions: </th>
+          </tr>
+        </thead>
+        <tbody id="products"></tbody>
+      </table>
+      <!-- <div id="products" style="display: none;">
+        Show products here..  
+    </div> -->
+
+
+      </main>
+      <!-- <div id="products">
+        <form action="http://localhost:5400/api/products" method="post">
+         <label for="">slug: </label><input type="text" name="slug">
+         <label for="">Product name: </label><input type="text" name="name">
+         <label for="">description: </label><input type="text" name="description">
+         <label for="">price: </label><input type="text" name="price">
+         <button type="submit">Save</button>
+        </form>
+     </div> -->
+     <script src="
+     https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js
+     "></script>
+     <script type="text/javascript" src="../../cssClasses.js"></script>
+      <script type="text/javascript" src="../../scripts/products.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

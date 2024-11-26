@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit user</title>
+</head>
+<body>
+    <header class="bg-blue-500 flex justify-between p-4 text-white">
+        
+        <div class="text-xl font-bold"> <a href="/"> Shopping App</a></div>
+        <div>
+          <ul class="flex flex-row gap-3 ">
+            <li><a href="/">Home</a></li>
+            <li><a href="/pages/users/user.html">users</a></li>
+            <li><a class="bg-stone-100 text-black px-4 py-2 rounded" href="/pages/users/addUsers.html">Add New users</a></li>
+            <li><a href="/pages/about.html">about</a></li>
+          </ul>
+        </div>
+      </header>
+    
+      <main>
+        <h1>Edit Users</h1>
+        <form class="border-2 boder-black-500 my-6 p-6" >
+
+          <label for="first_name">First name:</label>
+          <input type="text" id="first_name"  class="border-2 mx-8"><br><br>
+
+          <label for="last_name">Last name:</label>
+          <input type="text" id="last_name"  class="border-2 mx-8"><br><br>
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" class="border-2 mx-8"><br><br>
+
+
+          <button type="button" onClick="updateUser()" class="bg-green-700 px-6 rounded py-2 text-white">Update</button>
+        </form>
+      </main>
+
+
+
+      <script src="
+      https://cdn.jsdelivr.net/npm/sweetalert2@11.13.2/dist/sweetalert2.all.min.js
+      "></script>
+  
+      <script src="/scripts/editUsers.js"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
